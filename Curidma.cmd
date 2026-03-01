@@ -1,20 +1,3 @@
-$z="d1a0c3c6a7c8db9b0b6fbbf3e0d6c7c2b87f9f5d3f88e9d88f1a6a6b4c3d5e9e"
-
-function x($v){
-    $s=[System.Security.Cryptography.SHA256]::Create()
-    return ([BitConverter]::ToString($s.ComputeHash([Text.Encoding]::UTF8.GetBytes($v))).Replace("-","").ToLower())
-}
-
-$a=Read-Host "Enter Access Key" -AsSecureString
-$b=[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($a))
-
-if((x $b) -ne $z){exit}
-
-Clear-Host
-
-function s{
-    Write-Host "Access Granted" -ForegroundColor Green
-    
 @setlocal DisableDelayedExpansion
 @echo off
 
@@ -894,7 +877,3 @@ ________________________________________________________________________________
 :txt:
 
 ::========================================================================================================================================
-    Write-Host "Main Script Running..."
-}
-
-s

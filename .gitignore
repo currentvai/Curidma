@@ -1,0 +1,19 @@
+# PowerShell temp & module files
+*.ps1xml
+*.psd1
+*.psm1
+*.ps1.?
+
+# System files
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Logs and temporary
+*.log
+*.tmp
+*.bak
+
+# Secret files (if any)
+core.enc
+password.txt

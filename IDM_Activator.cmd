@@ -379,7 +379,7 @@ echo Official Page  : https://github.com/@currentvai
 echo Contact        : https://github.com/@currentvai
 echo:
 timeout /t 4 >nul
-start https://github.com/@current
+start https://github.com/@currentvai
 goto MainMenu
 
 :readme
